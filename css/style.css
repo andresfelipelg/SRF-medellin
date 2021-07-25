@@ -1,0 +1,155 @@
+:root{
+  --blanco: #ffffff;
+  --oscuro:#212121;
+  --amarillo: #ffc107;
+  --naranja: #ff8000;
+  --dorado: #dbbd2b;
+  --azulClaro: #0097a7;
+  --gris: #757575;
+  --azul:blue;
+
+}
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+
+
+h1,h3 {
+  margin:0;
+}
+.nav-bg{
+  background-color: var(--naranja);
+}
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  
+}
+
+@media (min-width: 768px) {
+    .logo{
+      justify-content:flex-start;
+    }
+}
+
+.logo__img{
+   width:6.2rem;
+   margin-left: 1rem;
+}
+
+.logo__contenido{
+  margin-left: 1rem;
+}
+
+.navegacion-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:2rem;
+  line-height: .6;
+  
+}
+
+
+
+.btn{
+  width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vh;
+    display: flex;
+    background-color: var(--naranja);
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 2px solid black;
+}
+
+
+
+@media (min-width: 768px) {
+  .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  .navegacion__principal-hamburguer{
+    display:none;
+  }
+}
+
+.navegacion-principal a{
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem;
+ 
+}
+
+.navegacion__principal-hamburguer{
+  
+}
+
+.navegacion-principal a:hover{
+/* backgroun-color*/
+  color: var(--azul);
+}
+
+
+.hero{
+margin: 0;
+background-image: url(../img/Maestro.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+
+height:32rem;
+
+}
+
+@media (min-width: 768px) {
+  .hero{
+    margin: 0;
+    background-image: url(../img/paramahansa-yogananda.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 66rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+.hero__contenido{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+  }
+}
