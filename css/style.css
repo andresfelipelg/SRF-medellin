@@ -26,9 +26,26 @@ body {
 }
 
 
-h1,h3 {
+h1,h2,h3,p {
   margin:0;
 }
+
+h1{
+  font-size: 3.4rem
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2.8rem;
+}
+
+p{
+  font-size: 2.4rem;
+}
+
 .nav-bg{
   background-color: var(--naranja);
 }
@@ -179,13 +196,12 @@ hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 
 
 .hero{
-
-margin: 0;
-background-image: url(../img/Maestro.jpg);
-background-size: contain;
-background-repeat: no-repeat;
-height: 45rem;
-width: 100%;
+  margin: 0;
+  background-image: url(../img/Maestro.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 22rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -211,4 +227,9 @@ width: 100%;
   align-items: flex-end;
   
   }
+}
+
+.description__parrafo{
+  text-align: center;
+  padding: 1rem;
 }
